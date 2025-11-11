@@ -1,0 +1,26 @@
+{
+  "default_sites": [
+    "https://www.amazon.com",
+    "https://www.bestbuy.com", 
+    "https://www.target.com",
+    "https://www.walmart.com"
+  ],
+  "code_patterns": [
+    "regex:[A-Z]{1,3}[0-9]{3,8}",
+    "regex:SKU[0-9]+",
+    "regex:Model\\s+([A-Z0-9]+)",
+    "regex:Part\\s*#\\s*([A-Z0-9-]+)",
+    "UPC",
+    "ASIN",
+    "Model",
+    "SKU",
+    "Part Number",
+    "Item #"
+  ],
+  "search_settings": {
+    "min_web_matches": 3,
+    "max_sites_per_product": 5,
+    "request_delay": 1,
+    "timeout": 10
+  }
+}
