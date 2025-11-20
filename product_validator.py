@@ -28,8 +28,7 @@ class ProductValidator:
             "regex:[0-9]{2}-[0-9]{2}",              # XX-XX format
             "regex:[0-9]{3}-[0-9]{2}",              # XXX-XX format  
             "regex:[0-9]{2}-[0-9]{3}",              # XX-XXX format
-            "regex:[0-9]{3}-[0-9]{3}",              # XXX-XXX format
-            "regex:501192191[0-9]{4}"               # 13 digit barcode starting with 501192191
+            "regex:5011921[0-9]{6}"               # 13 digit barcode starting with 5011921
         ]
         
     def search_product_codes_on_sites(self, product_name: str, target_sites: List[str], code_patterns: List[str]) -> Dict[str, Any]:
